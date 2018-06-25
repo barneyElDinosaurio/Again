@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
 	<color name="primary500">#454545</color>
 	<color name="primary700">#ca8f8f8f</color>
 	<color name="primary800">#737473</color>
@@ -19,10 +20,12 @@
 	<color name="grey900">#ff282828</color>
 	<color name="red500">#29293b</color>
 	<color name="red800">#4d442b</color>
-	<color name="orange500">#ffff9800</color>
+	<color name="orange500">#e9056111</color>
 	<color name="green500">#d82a2e2a</color>
 	<color name="bubble">#e8788678</color>
 	<color name="unreadcountlight">#d9868b86</color>
 	<color name="unreadcountdark">#1a1b1a</color>
 	<color name="transparent">#80FFFFFF</color>
+	<color name="abColor">#e9056111</color>
+
 </resources>

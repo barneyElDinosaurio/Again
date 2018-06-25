@@ -18,6 +18,7 @@ import android.content.IntentFilter;
 import android.content.IntentSender.SendIntentException;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
+import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -298,8 +299,10 @@ public class ConversationActivity extends XmppActivity
 		listView.setAdapter(this.listAdapter);
 
 		final ActionBar actionBar = getActionBar();
+
 		if (actionBar != null) {
 			actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_TITLE);
+			actionBar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.orange500)));
 		}
 
 		listView.setOnItemClickListener(new OnItemClickListener() {
