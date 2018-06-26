@@ -11,6 +11,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentSender.SendIntentException;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -422,7 +423,17 @@ public class ConversationFragment extends Fragment implements EditMessage.Keyboa
 				}
 				break;
 			default:
-				sendPlainTextMessage(message);
+				//Verificar si otr no esta puesto
+				if(conversation.getNextEncryption() != Message.ENCRYPTION_OTR) {
+
+					Toast.makeText(activity, "ENVIANDO MENSAJE SIN SEGURIDAD", Toast.LENGTH_SHORT).show();
+
+					sendPlainTextMessage(message);//enviar texto sin encriptar
+					Toast.makeText(activity, "Cambiando encriptacion a OTR", Toast.LENGTH_SHORT).show();
+					conversation.setNextEncryption(Message.ENCRYPTION_OTR);
+					mEditMessage.setTextColor(Color.BLACK);
+
+				}
 		}
 	}
 

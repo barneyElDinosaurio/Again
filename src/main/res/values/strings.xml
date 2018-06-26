@@ -748,4 +748,25 @@
     <string name="size_of_board">3</string>
     <string name="X">"   X   "</string>
     <string name="O">"   O   "</string>
+
+    <!--Menu McDonalds-->
+    <string name="title_section1">Inicio</string>
+    <string name="title_section2">McDelivery</string>
+    <string name="title_section3">Mis Pedidos</string>
+    <string name="title_section4">Cupones</string>
+    <string name="title_section5">Restaurantes</string>
+    <string name="title_section6">Productos</string>
+    <string name="title_section7">McExperiencia</string>
+    <string name="title_section8">QR Code</string>
+    <string name="title_section9">Perfil</string>
+    <string name="title_section10">Configuracion</string>
+    <string name="title_section11">Institucional</string>
+    <string name="title_section12">Sobre la app</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
 </resources>
