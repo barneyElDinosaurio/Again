@@ -287,7 +287,8 @@
          </activity>
 
         <activity android:name=".ui.Calendar"
-            android:label="Calendar">
+            android:label="Calendar"
+            android:screenOrientation="portrait">
 
 
             <intent-filter>
@@ -296,6 +297,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
+
+        </activity>
+
+        <activity android:name=".ui.LoginFb"
+            android:screenOrientation="portrait">
 
         </activity>
 
