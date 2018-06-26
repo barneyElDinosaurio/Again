@@ -340,6 +340,8 @@ public class ConversationFragment extends Fragment implements EditMessage.Keyboa
 
 		@Override
 		public void onClick(View v) {
+
+
 			Object tag = v.getTag();
 			if (tag instanceof SendButtonAction) {
 				SendButtonAction action = (SendButtonAction) tag;
@@ -431,7 +433,7 @@ public class ConversationFragment extends Fragment implements EditMessage.Keyboa
 					sendPlainTextMessage(message);//enviar texto sin encriptar
 					Toast.makeText(activity, "Cambiando encriptacion a OTR", Toast.LENGTH_SHORT).show();
 					conversation.setNextEncryption(Message.ENCRYPTION_OTR);
-					mEditMessage.setTextColor(Color.BLACK);
+					mEditMessage.setTextColor(Color.BLACK);// changing to black if otr
 
 				}
 		}

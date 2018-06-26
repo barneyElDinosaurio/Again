@@ -14,11 +14,11 @@
 	<color name="white70">#b2ffffff</color>
 	<color name="white12">#1fffffff</color>
 	<color name="grey50">#fffafafa</color>
-	<color name="grey200">#149c02</color>
+	<color name="grey200">#073900</color>
 	<color name="grey500">#ff9e9e9e</color>
 	<color name="grey800">#ff424242</color>
 	<color name="grey900">#ff282828</color>
-	<color name="red500">#29293b</color>
+	<color name="red500">#ff0324</color>
 	<color name="red800">#4d442b</color>
 	<color name="orange500">#e9056111</color>
 	<color name="green500">#d82a2e2a</color>
