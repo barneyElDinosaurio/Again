@@ -45,7 +45,7 @@
             android:paddingLeft="8dp"
             android:paddingRight="8dp"
             android:paddingTop="12dp"
-            android:textColor="@color/red500" >
+            android:textColor="?attr/color_text_primary" >
 
             <requestFocus />
         </xx.xxx.xxxx.ui.EditMessage>

@@ -433,7 +433,6 @@ public class ConversationFragment extends Fragment implements EditMessage.Keyboa
 					sendPlainTextMessage(message);//enviar texto sin encriptar
 					Toast.makeText(activity, "Cambiando encriptacion a OTR", Toast.LENGTH_SHORT).show();
 					conversation.setNextEncryption(Message.ENCRYPTION_OTR);
-					mEditMessage.setTextColor(Color.BLACK);// changing to black if otr
 
 				}
 		}
@@ -486,9 +485,13 @@ public class ConversationFragment extends Fragment implements EditMessage.Keyboa
 			@Override
 			public void onClick(View v) {
 
+				if(conversation.getNextEncryption() != Message.ENCRYPTION_OTR) {
+					mEditMessage.setTextColor(Color.RED);
+				}else if (conversation.getNextEncryption() == Message.ENCRYPTION_OTR){
+					mEditMessage.setTextColor(Color.BLACK);
+				}
 
-
-				//ENCRIPTACION RANDOM
+					//ENCRIPTACION RANDOM
 				//int r = (int) (Math.random() * (2 - 0)) + 1;
 
 				//switch(r) {

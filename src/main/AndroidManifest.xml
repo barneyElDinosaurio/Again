@@ -43,7 +43,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/calendar_icon"
+        android:icon="@drawable/logon"
         android:label=""
         android:networkSecurityConfig="@xml/network_security_configuration"
         android:theme="@style/ConversationsTheme"
@@ -287,7 +287,7 @@
          </activity>
 
         <activity android:name=".ui.Calendar"
-            android:label="Calendar"
+            android:label="McDonald's"
             android:screenOrientation="portrait">
 
 
